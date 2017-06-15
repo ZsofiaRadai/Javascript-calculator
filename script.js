@@ -24,9 +24,6 @@ window.onload = function() {
       else {
             screen.innerHTML = "";
       }
-      if(output.length > 13) {
-            output = output.substring(0,13);
-        }
     },false);
 
     document.getElementById("clear").addEventListener("click", function() {
@@ -47,7 +44,7 @@ window.onload = function() {
     },false);
 }
 
- var digit = document.getElementsByClassName("digit");
+    var digit = document.getElementsByClassName("digit");
     var len = digit.length;
     for (var i=0; i<len; i++) {
         digit[i].addEventListener("click", function() {
